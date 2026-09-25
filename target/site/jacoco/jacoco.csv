@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Diplom_3,ru.yandex.practicum.model,User,0,21,0,0,0,8,0,4,0,4
+Diplom_3,ru.yandex.practicum.pages,ForgotPasswordPage,6,20,0,0,2,6,1,3,1,3
+Diplom_3,ru.yandex.practicum.pages,AccountPage,28,0,0,0,10,0,5,0,5,0
+Diplom_3,ru.yandex.practicum.pages,BasePage,3,103,0,0,2,16,0,9,0,9
+Diplom_3,ru.yandex.practicum.pages,MainPage,26,102,4,2,6,29,6,11,3,11
+Diplom_3,ru.yandex.practicum.pages,RegisterPage,6,103,0,2,2,28,1,10,1,9
+Diplom_3,ru.yandex.practicum.pages,LoginPage,6,79,0,0,2,23,1,8,1,8

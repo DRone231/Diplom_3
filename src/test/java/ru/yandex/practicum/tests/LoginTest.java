@@ -15,6 +15,7 @@ import org.junit.runners.Parameterized.Parameters;
 import ru.yandex.practicum.base.BaseTest;
 import ru.yandex.practicum.pages.MainPage;
 import ru.yandex.practicum.pages.LoginPage;
+import ru.yandex.practicum.pages.BasePage;
 import ru.yandex.practicum.api.ApiClient;
 import ru.yandex.practicum.utils.UserGenerator;
 
@@ -73,12 +74,13 @@ public class LoginTest extends BaseTest {
     @DisplayName("Вход через кнопку «Личный кабинет»")
     @Test
     public void loginViaPersonalCabinetButton() {
-        new MainPage(driver)
+        BasePage page = new MainPage(driver)
                 .open()
                 .clickPersonalCabinet();
 
-        MainPage mainPage = new LoginPage(driver)
-                .login(testEmail, testPassword);
+        LoginPage loginPage = (LoginPage) page;
+
+        MainPage mainPage = loginPage.login(testEmail, testPassword);
 
         Assert.assertTrue("Кнопка «Оформить заказ» должна быть видна после входа",
                 mainPage.isOrderButtonVisible());

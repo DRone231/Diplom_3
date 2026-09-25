@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MainPage.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Diplom_3</a> &gt; <a href="index.source.html" class="el_package">ru.yandex.practicum.pages</a> &gt; <span class="el_source">MainPage.java</span></div><h1>MainPage.java</h1><pre class="source lang-java linenums">package ru.yandex.practicum.pages;
+
+import io.qameta.allure.Step;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class MainPage extends BasePage {
+
+<span class="fc" id="L9">    private static final By LOGIN_BUTTON = By.xpath(&quot;.//button[contains(text(),'Войти в аккаунт')]&quot;);</span>
+<span class="fc" id="L10">    private static final By PERSONAL_CABINET_LINK = By.xpath(&quot;.//a[@href='/account']&quot;);</span>
+<span class="fc" id="L11">    private static final By ORDER_BUTTON = By.xpath(&quot;.//button[contains(text(),'Оформить заказ')]&quot;);</span>
+<span class="fc" id="L12">    private static final By LOGO = By.xpath(&quot;.//div[contains(@class,'logo')]/a&quot;);</span>
+<span class="fc" id="L13">    private static final By CONSTRUCTOR_LINK = By.xpath(&quot;.//a[@href='/']&quot;);</span>
+<span class="fc" id="L14">    private static final By BUNS_TAB = By.xpath(&quot;.//span[contains(text(),'Булки')]/parent::div&quot;);</span>
+<span class="fc" id="L15">    private static final By SAUCES_TAB = By.xpath(&quot;.//span[contains(text(),'Соусы')]/parent::div&quot;);</span>
+<span class="fc" id="L16">    private static final By FILLINGS_TAB = By.xpath(&quot;.//span[contains(text(),'Начинки')]/parent::div&quot;);</span>
+<span class="fc" id="L17">    private static final By ACTIVE_TAB = By.xpath(&quot;.//div[contains(@class,'current')]&quot;);</span>
+
+    public MainPage(WebDriver driver) {
+<span class="fc" id="L20">        super(driver);</span>
+<span class="fc" id="L21">    }</span>
+
+    @Step(&quot;Открыть главную страницу&quot;)
+    public MainPage open() {
+<span class="fc" id="L25">        driver.get(BASE_URL);</span>
+<span class="fc" id="L26">        return this;</span>
+    }
+
+    @Step(&quot;Нажать кнопку «Войти в аккаунт»&quot;)
+    public LoginPage clickLoginButton() {
+<span class="fc" id="L31">        click(LOGIN_BUTTON);</span>
+<span class="fc" id="L32">        waitForUrlContains(&quot;/login&quot;);</span>
+<span class="fc" id="L33">        return new LoginPage(driver);</span>
+    }
+
+    @Step(&quot;Нажать ссылку «Личный кабинет»&quot;)
+    public BasePage clickPersonalCabinet() {
+<span class="fc" id="L38">        click(PERSONAL_CABINET_LINK);</span>
+        // Ждём, пока URL поменяется на /login или /account
+<span class="pc bpc" id="L40" title="1 of 2 branches missed.">        wait.until(d -&gt; d.getCurrentUrl().contains(&quot;/login&quot;)</span>
+<span class="pc bnc" id="L41" title="All 2 branches missed.">                || d.getCurrentUrl().contains(&quot;/account&quot;));</span>
+<span class="pc bpc" id="L42" title="1 of 2 branches missed.">        if (driver.getCurrentUrl().contains(&quot;/login&quot;)) {</span>
+<span class="fc" id="L43">            return new LoginPage(driver);</span>
+        }
+<span class="nc" id="L45">        return new AccountPage(driver);</span>
+    }
+
+    @Step(&quot;Нажать логотип Stellar Burgers&quot;)
+    public MainPage clickLogo() {
+<span class="nc" id="L50">        click(LOGO);</span>
+<span class="nc" id="L51">        return this;</span>
+    }
+
+    @Step(&quot;Нажать ссылку «Конструктор»&quot;)
+    public MainPage clickConstructorLink() {
+<span class="nc" id="L56">        click(CONSTRUCTOR_LINK);</span>
+<span class="nc" id="L57">        return this;</span>
+    }
+
+    @Step(&quot;Перейти к разделу «Булки»&quot;)
+    public MainPage clickBunsTab() {
+<span class="fc" id="L62">        click(BUNS_TAB);</span>
+<span class="fc" id="L63">        return this;</span>
+    }
+
+    @Step(&quot;Перейти к разделу «Соусы»&quot;)
+    public MainPage clickSaucesTab() {
+<span class="fc" id="L68">        click(SAUCES_TAB);</span>
+<span class="fc" id="L69">        return this;</span>
+    }
+
+    @Step(&quot;Перейти к разделу «Начинки»&quot;)
+    public MainPage clickFillingsTab() {
+<span class="fc" id="L74">        click(FILLINGS_TAB);</span>
+<span class="fc" id="L75">        return this;</span>
+    }
+
+    public String getActiveTabText() {
+<span class="fc" id="L79">        return getText(ACTIVE_TAB);</span>
+    }
+
+    public boolean isOrderButtonVisible() {
+<span class="fc" id="L83">        return isDisplayed(ORDER_BUTTON);</span>
+    }
+
+    public boolean isLoginButtonVisible() {
+<span class="nc" id="L87">        return isDisplayed(LOGIN_BUTTON);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

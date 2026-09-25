@@ -1,0 +1,251 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "ru.yandex.practicum.tests.ConstructorTest",
+    "children" : [ {
+      "name" : "Переход к разделу «Начинки»",
+      "uid" : "b5b8a68d57e1e647",
+      "parentUid" : "28f58e62d12ff07fd438ee21f78ef488",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375658224,
+        "stop" : 1790375660466,
+        "duration" : 2242
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Переход к разделу «Булки»",
+      "uid" : "e50e849d61aa868f",
+      "parentUid" : "28f58e62d12ff07fd438ee21f78ef488",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375660545,
+        "stop" : 1790375662198,
+        "duration" : 1653
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Переход к разделу «Соусы»",
+      "uid" : "3b3149663d956b50",
+      "parentUid" : "28f58e62d12ff07fd438ee21f78ef488",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375662204,
+        "stop" : 1790375663376,
+        "duration" : 1172
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Переход к разделу «Начинки»",
+      "uid" : "b03b60fd4f02cbde",
+      "parentUid" : "28f58e62d12ff07fd438ee21f78ef488",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375663381,
+        "stop" : 1790375664471,
+        "duration" : 1090
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Переход к разделу «Булки»",
+      "uid" : "64764cfe6294441b",
+      "parentUid" : "28f58e62d12ff07fd438ee21f78ef488",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375664473,
+        "stop" : 1790375665982,
+        "duration" : 1509
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Переход к разделу «Соусы»",
+      "uid" : "e1a1abe9c8ecea46",
+      "parentUid" : "28f58e62d12ff07fd438ee21f78ef488",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375665985,
+        "stop" : 1790375667159,
+        "duration" : 1174
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "28f58e62d12ff07fd438ee21f78ef488"
+  }, {
+    "name" : "ru.yandex.practicum.tests.LoginTest",
+    "children" : [ {
+      "name" : "Вход через кнопку «Личный кабинет»",
+      "uid" : "29b09b59c973554e",
+      "parentUid" : "67d04bde4ddddcac6baf411bb979acb6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375668794,
+        "stop" : 1790375675146,
+        "duration" : 6352
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Вход через ссылку «Войти» в форме регистрации",
+      "uid" : "939065de5b1389a5",
+      "parentUid" : "67d04bde4ddddcac6baf411bb979acb6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375675210,
+        "stop" : 1790375678242,
+        "duration" : 3032
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Вход через кнопку «Войти в аккаунт» на главной странице",
+      "uid" : "c8b16ff6c15817a9",
+      "parentUid" : "67d04bde4ddddcac6baf411bb979acb6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375678245,
+        "stop" : 1790375681152,
+        "duration" : 2907
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Вход через ссылку «Войти» в форме восстановления пароля",
+      "uid" : "91711f5b8acd13",
+      "parentUid" : "67d04bde4ddddcac6baf411bb979acb6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375681154,
+        "stop" : 1790375684205,
+        "duration" : 3051
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Вход через кнопку «Личный кабинет»",
+      "uid" : "b247c93e01e5141",
+      "parentUid" : "67d04bde4ddddcac6baf411bb979acb6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375684208,
+        "stop" : 1790375687146,
+        "duration" : 2938
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Вход через ссылку «Войти» в форме регистрации",
+      "uid" : "9e00d8b97624256f",
+      "parentUid" : "67d04bde4ddddcac6baf411bb979acb6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375687148,
+        "stop" : 1790375690153,
+        "duration" : 3005
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Вход через кнопку «Войти в аккаунт» на главной странице",
+      "uid" : "598f64f3fd607f6e",
+      "parentUid" : "67d04bde4ddddcac6baf411bb979acb6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375690156,
+        "stop" : 1790375693044,
+        "duration" : 2888
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Вход через ссылку «Войти» в форме восстановления пароля",
+      "uid" : "c4d58e3b1e9f0e05",
+      "parentUid" : "67d04bde4ddddcac6baf411bb979acb6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375693047,
+        "stop" : 1790375696080,
+        "duration" : 3033
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "67d04bde4ddddcac6baf411bb979acb6"
+  }, {
+    "name" : "ru.yandex.practicum.tests.RegistrationTest",
+    "children" : [ {
+      "name" : "Регистрация с паролем короче 6 символов показывает ошибку",
+      "uid" : "ef7ee2c67ae59b31",
+      "parentUid" : "e5babbff1777afee9bb3cb7189d693e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375697730,
+        "stop" : 1790375700401,
+        "duration" : 2671
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Успешная регистрация нового пользователя",
+      "uid" : "7a739ff14cee41f6",
+      "parentUid" : "e5babbff1777afee9bb3cb7189d693e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375700461,
+        "stop" : 1790375702847,
+        "duration" : 2386
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Регистрация с паролем короче 6 символов показывает ошибку",
+      "uid" : "7e4c812ca42d0877",
+      "parentUid" : "e5babbff1777afee9bb3cb7189d693e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375702852,
+        "stop" : 1790375704500,
+        "duration" : 1648
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Успешная регистрация нового пользователя",
+      "uid" : "bc7f05af48408fea",
+      "parentUid" : "e5babbff1777afee9bb3cb7189d693e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375704502,
+        "stop" : 1790375706466,
+        "duration" : 1964
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e5babbff1777afee9bb3cb7189d693e5"
+  } ]
+}

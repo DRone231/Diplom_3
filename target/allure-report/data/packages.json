@@ -1,0 +1,243 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "ru.yandex.practicum.tests",
+    "children" : [ {
+      "name" : "navigateToFillings[Браузер: chrome]",
+      "uid" : "b5b8a68d57e1e647",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375658224,
+        "stop" : 1790375660466,
+        "duration" : 2242
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "navigateToBuns[Браузер: chrome]",
+      "uid" : "e50e849d61aa868f",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375660545,
+        "stop" : 1790375662198,
+        "duration" : 1653
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "navigateToSauces[Браузер: chrome]",
+      "uid" : "3b3149663d956b50",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375662204,
+        "stop" : 1790375663376,
+        "duration" : 1172
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "navigateToFillings[Браузер: yandex]",
+      "uid" : "b03b60fd4f02cbde",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375663381,
+        "stop" : 1790375664471,
+        "duration" : 1090
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "navigateToBuns[Браузер: yandex]",
+      "uid" : "64764cfe6294441b",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375664473,
+        "stop" : 1790375665982,
+        "duration" : 1509
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "navigateToSauces[Браузер: yandex]",
+      "uid" : "e1a1abe9c8ecea46",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375665985,
+        "stop" : 1790375667159,
+        "duration" : 1174
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginViaPersonalCabinetButton[Браузер: chrome]",
+      "uid" : "29b09b59c973554e",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375668794,
+        "stop" : 1790375675146,
+        "duration" : 6352
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginViaRegisterForm[Браузер: chrome]",
+      "uid" : "939065de5b1389a5",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375675210,
+        "stop" : 1790375678242,
+        "duration" : 3032
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginViaMainPageButton[Браузер: chrome]",
+      "uid" : "c8b16ff6c15817a9",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375678245,
+        "stop" : 1790375681152,
+        "duration" : 2907
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginViaForgotPasswordForm[Браузер: chrome]",
+      "uid" : "91711f5b8acd13",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375681154,
+        "stop" : 1790375684205,
+        "duration" : 3051
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginViaPersonalCabinetButton[Браузер: yandex]",
+      "uid" : "b247c93e01e5141",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375684208,
+        "stop" : 1790375687146,
+        "duration" : 2938
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginViaRegisterForm[Браузер: yandex]",
+      "uid" : "9e00d8b97624256f",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375687148,
+        "stop" : 1790375690153,
+        "duration" : 3005
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginViaMainPageButton[Браузер: yandex]",
+      "uid" : "598f64f3fd607f6e",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375690156,
+        "stop" : 1790375693044,
+        "duration" : 2888
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginViaForgotPasswordForm[Браузер: yandex]",
+      "uid" : "c4d58e3b1e9f0e05",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375693047,
+        "stop" : 1790375696080,
+        "duration" : 3033
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "registrationWithShortPasswordShowsError[Браузер: chrome]",
+      "uid" : "ef7ee2c67ae59b31",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375697730,
+        "stop" : 1790375700401,
+        "duration" : 2671
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "successfulRegistration[Браузер: chrome]",
+      "uid" : "7a739ff14cee41f6",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375700461,
+        "stop" : 1790375702847,
+        "duration" : 2386
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "registrationWithShortPasswordShowsError[Браузер: yandex]",
+      "uid" : "7e4c812ca42d0877",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375702852,
+        "stop" : 1790375704500,
+        "duration" : 1648
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "successfulRegistration[Браузер: yandex]",
+      "uid" : "bc7f05af48408fea",
+      "parentUid" : "95eb3c693042c65dcd828792e514e88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1790375704502,
+        "stop" : 1790375706466,
+        "duration" : 1964
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ru.yandex.practicum.tests"
+  } ]
+}
