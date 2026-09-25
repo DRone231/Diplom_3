@@ -1,0 +1,65 @@
+{
+  "uid" : "c8b16ff6c15817a9",
+  "name" : "Вход через кнопку «Войти в аккаунт» на главной странице",
+  "fullName" : "ru.yandex.practicum.tests.LoginTest.loginViaMainPageButton[Браузер: chrome]",
+  "historyId" : "ad03b90f75ce0598069c7e69ea5dcc8",
+  "time" : {
+    "start" : 1790375678245,
+    "stop" : 1790375681152,
+    "duration" : 2907
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ru.yandex.practicum.tests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.yandex.practicum.tests.LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginViaMainPageButton[Браузер: chrome]"
+  }, {
+    "name" : "suite",
+    "value" : "ru.yandex.practicum.tests.LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GB3LVKE"
+  }, {
+    "name" : "thread",
+    "value" : "35936@DESKTOP-GB3LVKE.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Вход через кнопку «Войти в аккаунт» на главной"
+  }, {
+    "name" : "feature",
+    "value" : "Вход в аккаунт"
+  }, {
+    "name" : "epic",
+    "value" : "Stellar Burgers UI"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c8b16ff6c15817a9.json",
+  "parameterValues" : [ ]
+}

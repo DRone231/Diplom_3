@@ -1,0 +1,65 @@
+{
+  "uid" : "c4d58e3b1e9f0e05",
+  "name" : "Вход через ссылку «Войти» в форме восстановления пароля",
+  "fullName" : "ru.yandex.practicum.tests.LoginTest.loginViaForgotPasswordForm[Браузер: yandex]",
+  "historyId" : "fcc03c68a9bfbf977df0d16dd032eaf7",
+  "time" : {
+    "start" : 1790375693047,
+    "stop" : 1790375696080,
+    "duration" : 3033
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ru.yandex.practicum.tests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.yandex.practicum.tests.LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginViaForgotPasswordForm[Браузер: yandex]"
+  }, {
+    "name" : "suite",
+    "value" : "ru.yandex.practicum.tests.LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GB3LVKE"
+  }, {
+    "name" : "thread",
+    "value" : "35936@DESKTOP-GB3LVKE.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Вход через кнопку в форме восстановления пароля"
+  }, {
+    "name" : "feature",
+    "value" : "Вход в аккаунт"
+  }, {
+    "name" : "epic",
+    "value" : "Stellar Burgers UI"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c4d58e3b1e9f0e05.json",
+  "parameterValues" : [ ]
+}

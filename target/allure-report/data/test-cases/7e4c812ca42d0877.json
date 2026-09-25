@@ -1,0 +1,65 @@
+{
+  "uid" : "7e4c812ca42d0877",
+  "name" : "Регистрация с паролем короче 6 символов показывает ошибку",
+  "fullName" : "ru.yandex.practicum.tests.RegistrationTest.registrationWithShortPasswordShowsError[Браузер: yandex]",
+  "historyId" : "846f41e052e3b7cb935dca184e4580e3",
+  "time" : {
+    "start" : 1790375702852,
+    "stop" : 1790375704500,
+    "duration" : 1648
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ru.yandex.practicum.tests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.yandex.practicum.tests.RegistrationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "registrationWithShortPasswordShowsError[Браузер: yandex]"
+  }, {
+    "name" : "suite",
+    "value" : "ru.yandex.practicum.tests.RegistrationTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GB3LVKE"
+  }, {
+    "name" : "thread",
+    "value" : "35480@DESKTOP-GB3LVKE.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Ошибка при пароле меньше 6 символов"
+  }, {
+    "name" : "feature",
+    "value" : "Регистрация"
+  }, {
+    "name" : "epic",
+    "value" : "Stellar Burgers UI"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7e4c812ca42d0877.json",
+  "parameterValues" : [ ]
+}

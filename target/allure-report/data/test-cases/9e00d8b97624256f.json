@@ -1,0 +1,65 @@
+{
+  "uid" : "9e00d8b97624256f",
+  "name" : "Вход через ссылку «Войти» в форме регистрации",
+  "fullName" : "ru.yandex.practicum.tests.LoginTest.loginViaRegisterForm[Браузер: yandex]",
+  "historyId" : "f77574621ced8036bcefe6e01231aa25",
+  "time" : {
+    "start" : 1790375687148,
+    "stop" : 1790375690153,
+    "duration" : 3005
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ru.yandex.practicum.tests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.yandex.practicum.tests.LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginViaRegisterForm[Браузер: yandex]"
+  }, {
+    "name" : "suite",
+    "value" : "ru.yandex.practicum.tests.LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GB3LVKE"
+  }, {
+    "name" : "thread",
+    "value" : "35936@DESKTOP-GB3LVKE.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Вход через кнопку в форме регистрации"
+  }, {
+    "name" : "feature",
+    "value" : "Вход в аккаунт"
+  }, {
+    "name" : "epic",
+    "value" : "Stellar Burgers UI"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9e00d8b97624256f.json",
+  "parameterValues" : [ ]
+}
