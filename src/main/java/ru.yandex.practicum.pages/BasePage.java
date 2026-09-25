@@ -1,8 +1,11 @@
 package ru.yandex.practicum.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.time.Duration;
 
 public abstract class BasePage {
@@ -17,12 +20,14 @@ public abstract class BasePage {
     }
 
     protected void click(By locator) {
-        wait.until(d -> d.findElement(locator)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
 
     protected void type(By locator, String text) {
-        var el = wait.until(d -> d.findElement(locator));
-        el.clear();
+        var el = wait.until(ExpectedConditions.elementToBeClickable(locator));
+        el.click();
+        el.sendKeys(Keys.chord(Keys.CONTROL, "a"));
+        el.sendKeys(Keys.DELETE);
         el.sendKeys(text);
     }
 

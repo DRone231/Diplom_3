@@ -6,7 +6,7 @@ public class UserGenerator {
     private static final Random random = new Random();
 
     public static String randomEmail() {
-        return "test_" + random.nextInt(100000) + "@yandex.ru";
+        return "test_" + System.currentTimeMillis() + random.nextInt(1000) + "@yandex.ru";
     }
 
     public static String randomName() {
@@ -14,10 +14,10 @@ public class UserGenerator {
     }
 
     public static String randomPassword() {
-        return "pass" + random.nextInt(100000);
+        return "pass" + String.format("%06d", random.nextInt(1000000));
     }
 
     public static String shortPassword() {
-        return "12345"; // 5 символов — меньше минимальных 6
+        return "12345";
     }
 }

@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import io.qameta.allure.Attachment;
 
+import java.time.Duration;
+
 public abstract class BaseTest {
     protected WebDriver driver;
     protected String browser;
@@ -25,6 +27,7 @@ public abstract class BaseTest {
             driver = new ChromeDriver(options);
         }
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @After

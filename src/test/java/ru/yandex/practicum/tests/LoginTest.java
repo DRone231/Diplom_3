@@ -1,18 +1,22 @@
 package ru.yandex.practicum.tests;
 
-import org.junit.Test;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Assert;
+import org.junit.Before;
+import org.junit.After;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
-import io.qameta.allure.Epic;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
-import io.qameta.allure.Step;
 import ru.yandex.practicum.base.BaseTest;
 import ru.yandex.practicum.pages.MainPage;
 import ru.yandex.practicum.pages.LoginPage;
+import ru.yandex.practicum.api.ApiClient;
+import ru.yandex.practicum.utils.UserGenerator;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -30,24 +34,43 @@ public class LoginTest extends BaseTest {
         return Arrays.asList("chrome", "yandex");
     }
 
-    private static final String TEST_EMAIL = "test_login@yandex.ru";
-    private static final String TEST_PASSWORD = "password123";
+    private String testEmail;
+    private String testPassword;
+    private String testName;
+    private String accessToken;
 
-    @Step("Вход через кнопку «Войти в аккаунт» на главной")
+    @Before
+    public void setUpUser() {
+        testEmail = UserGenerator.randomEmail();
+        testPassword = UserGenerator.randomPassword();
+        testName = UserGenerator.randomName();
+
+        ApiClient.register(testEmail, testPassword, testName);
+        accessToken = ApiClient.loginAndGetToken(testEmail, testPassword);
+    }
+
+    @After
+    public void tearDownUser() {
+        if (accessToken != null) {
+            ApiClient.deleteByToken(accessToken);
+        }
+    }
+
     @Story("Вход через кнопку «Войти в аккаунт» на главной")
+    @DisplayName("Вход через кнопку «Войти в аккаунт» на главной странице")
     @Test
     public void loginViaMainPageButton() {
         MainPage mainPage = new MainPage(driver)
                 .open()
                 .clickLoginButton()
-                .login(TEST_EMAIL, TEST_PASSWORD);
+                .login(testEmail, testPassword);
 
         Assert.assertTrue("Кнопка «Оформить заказ» должна быть видна после входа",
                 mainPage.isOrderButtonVisible());
     }
 
-    @Step("Вход через кнопку «Личный кабинет»")
     @Story("Вход через кнопку «Личный кабинет»")
+    @DisplayName("Вход через кнопку «Личный кабинет»")
     @Test
     public void loginViaPersonalCabinetButton() {
         new MainPage(driver)
@@ -55,14 +78,14 @@ public class LoginTest extends BaseTest {
                 .clickPersonalCabinet();
 
         MainPage mainPage = new LoginPage(driver)
-                .login(TEST_EMAIL, TEST_PASSWORD);
+                .login(testEmail, testPassword);
 
         Assert.assertTrue("Кнопка «Оформить заказ» должна быть видна после входа",
                 mainPage.isOrderButtonVisible());
     }
 
-    @Step("Вход через кнопку в форме регистрации")
     @Story("Вход через кнопку в форме регистрации")
+    @DisplayName("Вход через ссылку «Войти» в форме регистрации")
     @Test
     public void loginViaRegisterForm() {
         LoginPage loginPage = new MainPage(driver)
@@ -71,14 +94,14 @@ public class LoginTest extends BaseTest {
                 .clickRegisterLink()
                 .clickLoginLink();
 
-        MainPage mainPage = loginPage.login(TEST_EMAIL, TEST_PASSWORD);
+        MainPage mainPage = loginPage.login(testEmail, testPassword);
 
         Assert.assertTrue("Кнопка «Оформить заказ» должна быть видна после входа",
                 mainPage.isOrderButtonVisible());
     }
 
-    @Step("Вход через кнопку в форме восстановления пароля")
     @Story("Вход через кнопку в форме восстановления пароля")
+    @DisplayName("Вход через ссылку «Войти» в форме восстановления пароля")
     @Test
     public void loginViaForgotPasswordForm() {
         LoginPage loginPage = new MainPage(driver)
@@ -87,7 +110,7 @@ public class LoginTest extends BaseTest {
                 .clickForgotPasswordLink()
                 .clickLoginLink();
 
-        MainPage mainPage = loginPage.login(TEST_EMAIL, TEST_PASSWORD);
+        MainPage mainPage = loginPage.login(testEmail, testPassword);
 
         Assert.assertTrue("Кнопка «Оформить заказ» должна быть видна после входа",
                 mainPage.isOrderButtonVisible());

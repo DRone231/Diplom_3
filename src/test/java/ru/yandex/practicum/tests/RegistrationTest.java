@@ -1,15 +1,15 @@
 package ru.yandex.practicum.tests;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import org.junit.Assert;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
-import io.qameta.allure.Epic;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
-import io.qameta.allure.Step;
 import ru.yandex.practicum.base.BaseTest;
 import ru.yandex.practicum.pages.MainPage;
 import ru.yandex.practicum.pages.RegisterPage;
@@ -31,8 +31,8 @@ public class RegistrationTest extends BaseTest {
         return Arrays.asList("chrome", "yandex");
     }
 
-    @Step("Успешная регистрация")
     @Story("Успешная регистрация")
+    @DisplayName("Успешная регистрация нового пользователя")
     @Test
     public void successfulRegistration() {
         RegisterPage registerPage = new MainPage(driver)
@@ -50,8 +50,8 @@ public class RegistrationTest extends BaseTest {
                 driver.getCurrentUrl().contains("/login"));
     }
 
-    @Step("Ошибка при пароле меньше 6 символов")
     @Story("Ошибка при пароле меньше 6 символов")
+    @DisplayName("Регистрация с паролем короче 6 символов показывает ошибку")
     @Test
     public void registrationWithShortPasswordShowsError() {
         RegisterPage registerPage = new MainPage(driver)

@@ -1,5 +1,6 @@
 package ru.yandex.practicum.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -12,11 +13,13 @@ public class AccountPage extends BasePage {
         super(driver);
     }
 
+    @Step("Открыть страницу личного кабинета")
     public AccountPage open() {
         driver.get(BASE_URL + "/account");
         return this;
     }
 
+    @Step("Нажать кнопку «Выход»")
     public void clickLogoutButton() {
         click(LOGOUT_BUTTON);
         waitForUrlContains("/login");
